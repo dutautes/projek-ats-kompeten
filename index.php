@@ -6,10 +6,22 @@
     <title>Kompeten</title>
     <!-- my own css -->
     <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
-<body>
+<body id="bodyPage" >
     <header>
-        <h1>readdir</h1>
+        <div class="ror justify-content-center mt-4">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
     </header>
 
     <!-- main -->
@@ -47,9 +59,7 @@
                             echo "Kompeten";
                         }else {
                             echo "Belum Kompeten";
-                        }
-                    }
-                    }
+                        } 
                     ?>
                 </h1>
                 <p class="rincian">Rincian Nilai</p>
@@ -63,7 +73,8 @@
                 <p>
                     <?php 
                     $nilai = $_POST["nilai"];
-                    echo "$nilai";
+                    echo $nilai; 
+                    }}
                     ?>
                 </p>
             </div>
@@ -85,5 +96,9 @@
     <footer>
         <p>&copy Projek Kompeten - Duta 2025</p>
     </footer>
+
+    <!-- javascript -->
+    <script src="assets/script/script.js"></script>
+
 </body>
 </html>
