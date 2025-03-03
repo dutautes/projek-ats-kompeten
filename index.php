@@ -14,13 +14,14 @@
 </head>
 <body id="bodyPage" >
     <header>
-        <div class="ror justify-content-center mt-4">
+        <div class="tema justify-content-center mt-4">
             <input type="checkbox" class="checkbox" id="checkbox">
             <label for="checkbox" class="checkbox-label">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
                 <span class="ball"></span>
             </label>
+            <p class="ket-tema">Change Theme</p>
         </div>
     </header>
 
@@ -60,32 +61,56 @@
                         }else {
                             echo "Belum Kompeten";
                         } 
+                    }
+                }
                     ?>
                 </h1>
                 <p class="rincian">Rincian Nilai</p>
                 <h1>
-                    <?php 
-                    $nama = $_POST["nama"];
-                    echo $nama;
+                    <?php
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        $nama = $_POST["nama"];
+                        $nilai = $_POST["nilai"];
+                        
+                        if (isset($_POST["nama"]) && isset($_POST["nilai"])) {
+                            $nama = $_POST["nama"];
+                            $usia = $_POST["nilai"];
+ 
+                            $nama = $_POST["nama"];
+                            echo "<h2>$nama</h2>";
+                        }}
                     ?>
                 </h1>
                 <p>Nilai</p>
                 <p>
                     <?php 
-                    $nilai = $_POST["nilai"];
-                    echo $nilai; 
-                    }}
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        $nama = $_POST["nama"];
+                        $nilai = $_POST["nilai"];
+                        
+                        if (isset($_POST["nama"]) && isset($_POST["nilai"])) {
+                            $nama = $_POST["nama"];
+                            $usia = $_POST["nilai"];
+
+                             $nilai = $_POST["nilai"];
+                            echo $nilai; 
+                        }}
                     ?>
                 </p>
             </div>
             <div class="container-right">
                 <h1>Cek Keterangan Nilai</h1>
+                <br>
                 <form method="post" action="">
-                    <label>Nama </label><br/>
-                    <input type="text" name="nama"><br/>
-                    <label>Nilai </label><br/>
-                    <input type="text" name="nilai"><br/>	
-                    <input type="submit" value="kirim">
+                    <label>Nama</label>
+                    <br>
+                    <input type="text" name="nama" class="inputNama">
+                    <br>
+                    <label>Nilai</label>
+                    <br>
+                    <input type="text" name="nilai" class="inputNilai">
+                    <br><br>	
+                    <input type="submit" value="kirim" class="submit">
 	            </form>
             </div>
         </div>
@@ -94,7 +119,7 @@
 
 
     <footer>
-        <p>&copy Projek Kompeten - Duta 2025</p>
+        <p>&copy Projek ATS Kompeten - Duta 2025</p>
     </footer>
 
     <!-- javascript -->
@@ -102,3 +127,5 @@
 
 </body>
 </html>
+
+<!-- tinggal responsif sama atur dikit containerleft -->

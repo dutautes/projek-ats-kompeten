@@ -45,12 +45,51 @@ main {
     height: auto;
 }
 
+/* form style */
+.inputNama,
+.inputNilai {
+    width: 20rem;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.inputNama:focus,
+.inputNilai:focus {
+    border: 2px solid lightblue;
+    box-shadow: 5px 5px 10px 0px lightblue;
+    outline: none;
+}
+
+form > label {
+    font-size: 18px;
+}
+
+.submit {
+    width: 25%;
+    padding: 0;
+    background-color: lightblue;
+    color: white;
+    border: 2px solid lightblue;
+    border-radius: 2px;
+}
+
+.submit:hover {
+    color: lightblue;
+    border: 2px solid lightblue;
+    background-color: white;
+}
+
+
 /* toggle change theme */
-.ror {
+.tema {
     flex-shrink: 0;
     max-width: 100%;
     justify-self: center;
     margin-bottom: 1.5rem;
+    display: flex;
+    gap: 10px;
 }
 
 .checkbox {
@@ -96,3 +135,15 @@ main {
 #checkbox {
     display: none;
 }
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* responsiv */
