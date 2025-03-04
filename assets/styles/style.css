@@ -24,6 +24,7 @@ main {
     -o-border-radius: 25px;
     background: linear-gradient(to right, #FFFACD 50%, #FFFFFF 50%);
     box-shadow: 5px 0px 50px -5px;
+    margin: 0 1rem;
 }
 
 .container-left,
@@ -34,15 +35,38 @@ main {
     flex-direction: column;
     flex: 1;
     border-radius: 25px;
-    margin: 2rem;
+    margin: 1.5rem;
     width: 100%;
     height: 575px;
+}
+
+h1.nama {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.result {
+    margin-bottom: 4rem;
+}
+
+.rincian {
+    position: absolute;
+    font-size: 18px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+p.nilai {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
 }
 
 .emoticon-k,
 .emoticon-bk {
     width: 100px;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 /* form style */
@@ -73,6 +97,7 @@ form > label {
     color: white;
     border: 2px solid lightblue;
     border-radius: 2px;
+    font-size: 17px;
 }
 
 .submit:hover {

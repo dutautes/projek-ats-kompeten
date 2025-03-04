@@ -38,7 +38,7 @@
                             $nama = $_POST["nama"];
                             $usia = $_POST["nilai"];
         
-                        if($nilai > 70){
+                        if($nilai >= 70){
                             echo "<img class='emoticon-k' src='assets/images/kompeten-yellow.png' alt='sudah-kompeten'>";
                         }else {
                             echo "<img class='emoticon-bk' src='assets/images/belum-kompeten-blue.png' alt='belum-kompeten'>";
@@ -46,7 +46,7 @@
                     }
                 }
                 ?>
-                <h1>
+                <h1 class="result">
                     <?php 
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $nama = $_POST["nama"];
@@ -56,7 +56,7 @@
                             $nama = $_POST["nama"];
                             $usia = $_POST["nilai"];
 
-                        if($nilai > 70){
+                        if($nilai >= 70){
                             echo "Kompeten";
                         }else {
                             echo "Belum Kompeten";
@@ -66,7 +66,7 @@
                     ?>
                 </h1>
                 <p class="rincian">Rincian Nilai</p>
-                <h1>
+                <h1 class="nama">
                     <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $nama = $_POST["nama"];
@@ -77,11 +77,11 @@
                             $usia = $_POST["nilai"];
  
                             $nama = $_POST["nama"];
-                            echo "<h2>$nama</h2>";
+                            echo $nama;
                         }}
                     ?>
                 </h1>
-                <p>Nilai</p>
+                <p class="nilai">Nilai</p>
                 <p>
                     <?php 
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
