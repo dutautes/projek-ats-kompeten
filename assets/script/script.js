@@ -1,9 +1,9 @@
-const body = document.getElementById("bodyPage");
-const checkbox = document.getElementById("checkbox");
-const tema = document.querySelector(".ket-tema");
-const mainContainer = document.querySelector(".main-container");
-const containerLeft = document.querySelector(".container-left");
-const footer = document.querySelector("footer");
+const body = document.getElementById("bodyPage"); // body
+const checkbox = document.getElementById("checkbox"); // toggle 
+const tema = document.querySelector(".ket-tema"); // ket "change theme"
+const mainContainer = document.querySelector(".main-container"); // perubahan bg pada mc
+const containerLeft = document.querySelector(".container-left"); // container kiri 
+const footer = document.querySelector("footer"); // footer
 
 checkbox.addEventListener("change", () => {
     if (checkbox.checked) { 

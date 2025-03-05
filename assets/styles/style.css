@@ -40,33 +40,50 @@ main {
     height: 575px;
 }
 
-h1.nama {
-    margin-top: 3rem;
-    font-size: 2rem;
+.emoticon-k {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.emot {
+    margin-bottom: 1rem;
 }
 
 .result {
-    margin-bottom: 4rem;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .rincian {
-    position: absolute;
-    font-size: 18px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-p.nilai {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 16px;
+    color: #444;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px 0;
     font-weight: bold;
 }
 
-.emoticon-k,
-.emoticon-bk {
-    width: 100px;
-    height: auto;
-    margin-bottom: 2rem;
+.nama {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.nilai {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.numberNilai {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 /* form style */
@@ -172,3 +189,42 @@ footer{
 }
 
 /* responsiv */
+@media screen and (max-width: 775px) {
+    .main-container {
+        flex-direction: column-reverse;
+        background: linear-gradient(to top, #FFFACD 55%, #FFFFFF 55%);
+    }
+    .container-left,
+    .container-right {
+        width: auto;
+        height: auto;
+    }
+
+    .emoticon-k, .emoticon-bk {
+        width: 60px;
+    }
+
+    .result {
+        font-size: 28px;
+    }
+
+    .rincian {
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .nama {
+        font-size: 20px;
+    }
+
+    .nilai {
+        font-size: 22px;
+    }
+
+    .numberNilai {
+        font-size: 36px;
+    }
+
+    /* input form */
+
+}
