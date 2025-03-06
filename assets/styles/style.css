@@ -22,7 +22,7 @@ main {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    background: linear-gradient(to right, #FFFACD 50%, #FFFFFF 50%);
+    background: linear-gradient(to right, rgb(56, 142, 171) 50%, #FFFFFF 50%);
     box-shadow: 5px 0px 50px -5px;
     margin: 0 1rem;
 }
@@ -40,10 +40,12 @@ main {
     height: 575px;
 }
 
-.emoticon-k {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
+.container-left {
+    background: linear-gradient(to bottom, #E9D988 50%, #fff 50%);
+}
+
+.container-right h1 {
+    color: rgb(77, 146, 169);
 }
 
 .emot {
@@ -51,9 +53,11 @@ main {
 }
 
 .result {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .rincian {
@@ -63,26 +67,30 @@ main {
     padding: 5px 15px;
     border-radius: 15px;
     display: inline-block;
-    margin: 10px 0;
+    margin-top: 1rem;
     font-weight: bold;
+    border: 1px solid #444;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .nama {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
     text-transform: capitalize;
 }
 
 .nilai {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     margin-top: 5px;
 }
 
 .numberNilai {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 5px;
 }
 
@@ -129,7 +137,7 @@ form > label {
     flex-shrink: 0;
     max-width: 100%;
     justify-self: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     display: flex;
     gap: 10px;
 }
