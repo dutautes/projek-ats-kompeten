@@ -38,8 +38,6 @@
                         $nilai = $_POST["nilai"];
 
                         if (isset($_POST["nama"]) && isset($_POST["nilai"])) {
-                            $nama = $_POST["nama"];
-                            $usia = $_POST["nilai"];
         
                         if($nilai >= 70){
                             echo "<img class='emoticon-k' src='assets/images/kompeten-green.png' alt='sudah-kompeten'>";
@@ -71,11 +69,7 @@
                 <!-- nilai dari inputan user -->
                 
                     <?php 
-                            if($nilai >= 70){
-                                echo "<p class='numberNilai' style='color: lightgreen'>{$nilai}</p>";
-                            } else {
-                                echo "<p class='numberNilai' style='color: red;'>{$nilai}</p>";
-                            } 
+                        echo $nilai; 
                         }}
                     ?>
                 </p>
